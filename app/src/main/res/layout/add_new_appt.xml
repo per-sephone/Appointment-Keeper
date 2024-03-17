@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewAppt">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:text="@string/description"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_box"
+        android:hint="DESCRIPTION"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:text="@string/begins_at"
+        android:textSize="25sp"/>
+
+    <DatePicker
+        android:id="@+id/beginDate"
+        android:layout_width="269dp"
+        android:layout_height="101dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:theme="@style/LargeTextDatePicker" />
+
+    <TimePicker
+        android:id="@+id/beginTime"
+        android:layout_width="271dp"
+        android:layout_height="130dp"
+        android:textSize="25sp"
+        android:theme="@style/LargeTextTimePicker"
+        android:timePickerMode="spinner" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:text="@string/ends_at"
+        android:textSize="25sp"/>
+
+    <DatePicker
+        android:id="@+id/endDate"
+        android:layout_width="279dp"
+        android:layout_height="101dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:theme="@style/LargeTextDatePicker"/>
+
+    <TimePicker
+        android:id="@+id/endTime"
+        android:layout_width="278dp"
+        android:layout_height="130dp"
+        android:timePickerMode="spinner"
+        android:theme="@style/LargeTextTimePicker"/>
+
+    <Button
+        android:id="@+id/submitNewAppt"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="60dp"
+        android:padding="30dp"
+        android:text="@string/submit"
+        android:textSize="25sp" />
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

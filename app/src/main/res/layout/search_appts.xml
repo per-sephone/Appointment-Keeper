@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchAppts">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:text="@string/search_start"
+            android:textSize="25sp"/>
+
+        <DatePicker
+            android:id="@+id/searchStartDate"
+            android:layout_width="279dp"
+            android:layout_height="101dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:theme="@style/LargeTextDatePicker"/>
+
+        <TimePicker
+            android:id="@+id/searchStartTime"
+            android:layout_width="278dp"
+            android:layout_height="130dp"
+            android:timePickerMode="spinner"
+            android:theme="@style/LargeTextTimePicker"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#DDDDDD"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/search_end"
+            android:textSize="25sp"/>
+
+        <DatePicker
+            android:id="@+id/searchEndDate"
+            android:layout_width="283dp"
+            android:layout_height="101dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:theme="@style/LargeTextDatePicker"/>
+
+        <TimePicker
+            android:id="@+id/searchEndTime"
+            android:layout_width="278dp"
+            android:layout_height="130dp"
+            android:timePickerMode="spinner"
+            android:theme="@style/LargeTextTimePicker"/>
+
+                <Button
+                    android:id="@+id/submitSearch"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="60dp"
+                    android:padding="30dp"
+                    android:text="@string/submit"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
